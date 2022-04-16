@@ -1,0 +1,171 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+
+.wrapper{
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height:100%;
+    background: url("img/sz3.jpg") no-repeat center;
+    background-size: cover;
+    z-index:3;
+}
+
+
+.main-title{
+    color:#fff;
+    font-size: 52px;
+    font-family: Arial;
+}
+
+
+.overlay{
+    width:2%;
+    height:100%;
+    position: relative;
+    z-index:4;
+    background:url("img/sz4.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    transition:1.2s linear;
+}
+
+
+.overlay:hover {
+    transition:0s linear;
+    opacity:0;
+}
+
+
+
+
+/* Books styles start */
+
+.books{
+    margin-bottom: 139px;
+}
+
+.books__book{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 108px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 108px; 
+    -webkit-box-align: center; 
+        -ms-flex-align: center; 
+            align-items: center;
+    margin-bottom: 77px;
+}
+
+.book__info{
+    padding-left: 47px;
+}
+
+.book__title{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 85px;
+}
+
+.book__desc{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 58px;
+}
+
+.book__more{
+    font-size: 16px;
+    color: #006DFE;
+    text-decoration: none;
+    padding-right: 59px;
+    background: url(../img/svg/arrow-right-ico.svg) no-repeat right center;
+}
+
+/* Books styles end */
+
+
+
+
+.benefits__card-more{
+    display: inline-block;
+    padding-right: 59px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #006DFE;
+    text-decoration: none;
+    background: url(../img/svg/arrow-right-ico.svg) no-repeat 95% center;
+    -webkit-transition: .2s all;
+    -o-transition: .2s all;
+    transition: .2s all;
+    padding-left:50%;
+}
+
+.benefits__card-more:hover, .benefits__card-more:focus{
+    background: url(../img/svg/arrow-right-ico.svg) no-repeat right center;
+}
+
+
+
+footer {
+	background-color:black;
+	left:0;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	padding:5px;
+	color: white;
+}
+.neonText {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+  }
+  
+  /* Additional styling */
+    
+  body {
+    font-size: 18px;
+    font-family: "Vibur", sans-serif;
+    background-color: #010a01;
+  }  
+  
+  h1, h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+    
+  h1 {
+      font-size: 4.2rem;
+  }
+    
+  h2 {
+      font-size: 1.8rem;
+  }
+  
+  .container {
+    margin-top: 20vh;
+  }
